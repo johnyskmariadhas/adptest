@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+/**
+ * 
+ * @author johny
+ *
+ */
 public class ConvertBillController {
 	
 	@GetMapping(path = "/adp-test/convert-bills/{bill}")
