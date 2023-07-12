@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 public class ConvertBillController {
 	
-	@GetMapping(path = "/adp-test/convert-bills/{bill}")
+	//@GetMapping(path = "/adp-test/convert-bills/{bill}")
 	public Map<Double, Integer> convertBills(@PathVariable String bill) {
 		double amountInBills = Double.valueOf(bill).doubleValue();
 		 Map<Double, Integer> coinCounts = new HashMap<>();
@@ -45,7 +45,14 @@ public class ConvertBillController {
 	        }
 
 	        return coinCounts;
+	        
+
 	}
+	
+    public static void main(String args[]) {
+    	
+    	
+    }
 	
 	
 	
